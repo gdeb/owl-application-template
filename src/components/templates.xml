@@ -1,0 +1,10 @@
+<templates>
+  <div t-name="App">
+    <h1>Welcome to this Owl Application</h1>
+    <Hello />
+  </div>
+
+  <div t-name="Hello">
+    Hello <t t-esc="state.name"/>
+  </div>
+</templates>

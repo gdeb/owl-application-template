@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title><%= htmlWebpackPlugin.options.title %></title>
+  </head>
+  <body>
+  <% if (htmlWebpackPlugin.options.mode === 'production') { %>
+    <script type="text/javascript" src="owl.min.js"></script>
+  <% } else { %>
+    <script type="text/javascript" src="owl.js"></script>
+  <% } %>
+  </body>
+</html>
